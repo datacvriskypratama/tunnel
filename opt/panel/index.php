@@ -17,7 +17,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>MCHostPanel | Login</title>
+	<title>Tamha's Server | Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,7 +39,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 </noscript>
 <form class="modal form-horizontal" action="dashboard.php" method="post">
 	<div class="modal-header" align="center">
-		<h1><i class="fa fa-server" aria-hidden="true"></i> MC<span style="color:gold">GG</span></h1>
+		<h1><i class="fa fa-server" aria-hidden="true"></i> Tamha's<span style="color:gold">Server</span></h1>
 		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server(s) running...</h3>
 	</div>
 	<div class="modal-body">
