@@ -17,7 +17,8 @@ if (!empty($_POST['user'])) {
 	<meta name="author" content="Hosting Tamha's Company">
 </head>
 <body>
-<?php if (is_file(".installed")) { ?>
+	<!-- .installed -->
+<?php if (is_file("")) { ?>
 	<div class="modal">
 		<div class="modal-header">
 			<h3>Install Tamha's Server</h3>
