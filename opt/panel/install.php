@@ -9,7 +9,7 @@ if (!empty($_POST['user'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>Install MCGG</title>
+	<title>Install Server</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
@@ -20,10 +20,10 @@ if (!empty($_POST['user'])) {
 <?php if (is_file(".installed")) { ?>
 	<div class="modal">
 		<div class="modal-header">
-			<h3>Install MCGG</h3>
+			<h3>Install Tamha's Server</h3>
 		</div>
 		<div class="modal-body">
-			<p>MCGG has already been installed.</p>
+			<p>Server has already been installed.</p>
 
 			<p class="alert alert-info">If you are sure it is not installed, delete the <code>.installed</code> file and refresh this page.</p>
 		</div>
@@ -34,7 +34,7 @@ if (!empty($_POST['user'])) {
 <?php } elseif (!empty($_POST['user'])) { ?>
 	<div class="modal">
 		<div class="modal-header">
-			<h3>Install MCHostPanel</h3>
+			<h3>Install Tamha's Host Panel</h3>
 		</div>
 		<div class="modal-body">
 			<p>MCHostPanel has been installed, and you are now logged in.</p>
@@ -46,7 +46,7 @@ if (!empty($_POST['user'])) {
 <?php } else { ?>
 	<form class="modal form-horizontal" action="install.php" method="post">
 		<div class="modal-header">
-			<h3>Install MCHostPanel</h3>
+			<h3>Install Tamha's Host Panel</h3>
 		</div>
 		<div class="modal-body">
 			<legend>Administrator User</legend>
