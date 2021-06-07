@@ -19,7 +19,7 @@ if (isset($_FILES['files']) && isset($_POST['dir'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>Upload Files | MCHostPanel</title>
+	<title>Upload Files | Server</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/smooth.css" id="smooth-ui">
