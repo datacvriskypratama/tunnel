@@ -539,7 +539,7 @@ log_format: logfmt \n
 log: ".$_POST['dir']."/ngrok.log \n
 ");
 	// Accept eula
-	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
+	file_put_contents($_POST['dir'].'/eula.txt','eula=true');
 	// Copy spigot
 	if ($_POST['version'] == '1.10.2') {
 		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
@@ -550,7 +550,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 	} else if ($_POST['version'] == '1.14.4') {
 		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.14.4.jar');
 	} else if ($_POST['version'] == '1.16.5') {
-		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.16.5.jar');
+		copy('serverbase/spigot-1.16.5.jar',$_POST['dir'].'/spigot-1.16.5.jar');
 	} else if ($_POST['version'] == '1.9.4') {
 		copy('serverbase/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar',$_POST['dir'].'/spigot-1.9.4.jar');
 	} else if ($_POST['version'] == '1.8.8') {
