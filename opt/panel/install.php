@@ -3,7 +3,7 @@ require_once 'inc/lib.php';
 if (!empty($_POST['user'])) {
 	session_start();
 	user_add($_POST['user'], $_POST['pass'], 'admin', $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
-	file_put_contents(".installed", "");
+	file_put_contents("", "");
 	$_SESSION['user'] = clean_alphanum($_POST['user']);
 }
 ?><!doctype html>
@@ -38,7 +38,7 @@ if (!empty($_POST['user'])) {
 			<h3>Install Tamha's Host Panel</h3>
 		</div>
 		<div class="modal-body">
-			<p>MCHostPanel has been installed, and you are now logged in.</p>
+			<p>CpanelCraft has been installed, and you are now logged in.</p>
 		</div>
 		<div class="modal-footer">
 			<a class="btn btn-success" href="dashboard.php">Continue to Panel</a>
